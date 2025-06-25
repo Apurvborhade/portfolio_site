@@ -21,6 +21,17 @@ const personal_projects = [
     techstack: ['NEXTJS', 'FIREBASE', 'REDUX TOOLKIT', 'SUPABASE', 'PINECONE', 'Xenova/all-MiniLM-L6-v2']
   },
   {
+    title: "NFTIX",
+    description: "NFTix is a decentralized ticketing platform that leverages blockchain technology to issue, manage, and verify event tickets as NFTs. It ensures transparency, prevents fraud, and gives users full ownership and transferability of their tickets.",
+    link: "https://nftix-ten.vercel.app/",
+    roles: [
+      'FULLSTACK',
+      'DESIGNER'
+    ],
+    image: 'nftix.jpeg',
+    techstack: ['NEXTJS','TYPESCRIPT', 'MONGODB', 'REACT-QUERY', 'SOLIDITY','HARDHAT','VIEM','WAGMI']
+  },
+  {
     title: "NEXTMATCH",
     description: "A smart sports scheduling and prediction platform that provides users with upcoming match details, team statistics, and AI-driven predictions. It helps fans and analysts stay updated with match schedules and insights.",
     link: "https://nextmatch-khaki.vercel.app/",
