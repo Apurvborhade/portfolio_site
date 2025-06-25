@@ -78,8 +78,16 @@ export default function Home() {
                 <span className="relative z-10 group-hover:text-white transition-colors">PROJECTS</span>
                 <div className="absolute inset-0 bg-black transform translate-x-[-110%] group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></div>
               </Link>
-              <Link href="#resume" className="font-medium flex items-center justify-center relative group overflow-hidden px-2">
-                <span className="relative z-10 group-hover:text-white transition-colors flex items-center">RESUME <ArrowUpRight className="scale-75" /></span>
+              <Link
+                href="/resume/resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium flex items-center justify-center relative group overflow-hidden px-2"
+              >
+                <span className="relative z-10 group-hover:text-white transition-colors flex items-center">
+                  RESUME <ArrowUpRight className="scale-75" />
+                </span>
                 <div className="absolute inset-0 bg-black transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></div>
               </Link>
             </div>
