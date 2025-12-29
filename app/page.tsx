@@ -29,7 +29,7 @@ const personal_projects = [
       'DESIGNER'
     ],
     image: 'nftix.jpeg',
-    techstack: ['NEXTJS','TYPESCRIPT', 'MONGODB', 'REACT-QUERY', 'SOLIDITY','HARDHAT','VIEM','WAGMI']
+    techstack: ['NEXTJS', 'TYPESCRIPT', 'MONGODB', 'REACT-QUERY', 'SOLIDITY', 'HARDHAT', 'VIEM', 'WAGMI']
   },
   {
     title: "NEXTMATCH",
@@ -63,6 +63,16 @@ const freelance_projects = [
     ],
     image: 'shriyashborhade.png',
     techstack: ['NEXTJS', 'TAILWINDCSS', 'GSAP']
+  },
+  {
+    title: "TEDX DYPDPU",
+    description: "Designed and developed an engaging website for the TEDx DYPDPU event, featuring a modern layout and dynamic animations to highlight speakers, agenda, and essential event details. The platform enhances visibility and simplifies information access for attendees and organizers.",
+    link: "https://tedxdypdpu.com",
+    roles: [
+      'DEVELOPER', 'DESIGNER'
+    ],
+    image: 'tedx.png',
+    techstack: ['NEXTJS', 'TAILWINDCSS', 'GSAP', 'ThreeJS']
   },
 ]
 export default function Home() {
