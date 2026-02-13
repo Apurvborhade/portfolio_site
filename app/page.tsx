@@ -11,37 +11,98 @@ const albertSans = Albert_Sans({
 
 const personal_projects = [
   {
+    title: "UNIFLOW",
+    description: "A cross-chain payroll and treasury management platform enabling organizations to deposit USDC once, earn yield on idle funds, and automate multi-chain salary distribution using Circle infrastructure and Arc.",
+    link: "https://github.com/Apurvborhade/UniFlow",
+    roles: ['FULLSTACK', 'BLOCKCHAIN'],
+    image: 'uniflow.jpg',
+    techstack: [
+      'NEXTJS',
+      'NODEJS',
+      'POSTGRESQL',
+      'PRISMA',
+      'CIRCLE API',
+      'USDC',
+      'CCTP',
+      'DOCKER'
+    ]
+  },
+  {
+    title: "CREDORA",
+    description: "An x402-based autonomous agent lending protocol enabling AI agents to borrow, retry failed crypto API payments, and auto-repay loans on-chain without human intervention.",
+    link: "https://github.com/Apurvborhade/AI-Agent-x402-enabled-lending-protocol",
+    roles: ['PROTOCOL ENGINEER', 'SMART CONTRACT'],
+    image: 'https://placehold.co/600x400?text=CREDORA',
+    techstack: [
+      'SOLIDITY',
+      'BASE',
+      'NODEJS',
+      'PYTHON',
+      'SMART CONTRACTS',
+      'ON-CHAIN WATCHERS'
+    ]
+  },
+  {
+    title: "RECONCILIATION ENGINE",
+    description: "A distributed financial reconciliation system that validates on-chain transactions against internal ledgers using event-driven architecture and Kafka-based consumers.",
+    link: "https://github.com/HarshalAndhale9657/Reconcillation-Engine",
+    roles: ['BACKEND', 'SYSTEM DESIGN'],
+    image: 'reconciliation.png',
+    techstack: [
+      'NODEJS',
+      'KAFKA',
+      'POSTGRESQL',
+      'PRISMA',
+      'DOCKER',
+      'MICROSERVICES'
+    ]
+  },
+  {
+    title: "MEMED.FUN",
+    description: "1st Prize winning Lens Protocol hackathon project. A decentralized meme-token platform integrating smart contracts, wallet flows, and on-chain engagement rewards.",
+    link: "https://github.com/furkannabisumji/memed",
+    roles: ['FRONTEND'],
+    image: 'memed.png',
+    techstack: [
+      'NEXTJS',
+      'TYPESCRIPT',
+      'LENS SDK',
+      'SMART CONTRACTS',
+      'WEB3',
+      'WALLET INTEGRATION'
+    ]
+  },
+  {
+    title: "1NODE",
+    description: "A visual no-code DeFi automation platform enabling users to build multi-chain strategies using drag-and-drop workflows across Optimism and Etherlink.",
+    link: "https://youtu.be/UzCThAJmoVU",
+    roles: ['FRONTEND ENGINEER'],
+    image: '1node.jpg',
+    techstack: [
+      'REACT FLOW',
+      'TYPESCRIPT',
+      'NEXTJS',
+      'MULTICHAIN',
+      '1INCH FUSION+',
+      'SMART CONTRACT INTEGRATION'
+    ]
+  },
+  {
     title: "GRADEWISE",
-    description: "An AI-driven academic platform that automates grading, detects plagiarism, and enhances learning through gamification. Using machine learning, it provides instant feedback, ensures academic integrity, and motivates students with interactive challenges and rewards.",
+    description: "An AI-powered academic platform automating grading, plagiarism detection, and personalized feedback using embeddings and vector search.",
     link: "https://gradewise-lilac.vercel.app/",
-    roles: [
-      'FULLSTACK'
-    ],
+    roles: ['FULLSTACK'],
     image: 'gradewise.jpg',
-    techstack: ['NEXTJS', 'FIREBASE', 'REDUX TOOLKIT', 'SUPABASE', 'PINECONE', 'Xenova/all-MiniLM-L6-v2']
-  },
-  {
-    title: "NFTIX",
-    description: "NFTix is a decentralized ticketing platform that leverages blockchain technology to issue, manage, and verify event tickets as NFTs. It ensures transparency, prevents fraud, and gives users full ownership and transferability of their tickets.",
-    link: "https://nftix-ten.vercel.app/",
-    roles: [
-      'FULLSTACK',
-      'DESIGNER'
-    ],
-    image: 'nftix.jpeg',
-    techstack: ['NEXTJS', 'TYPESCRIPT', 'MONGODB', 'REACT-QUERY', 'SOLIDITY', 'HARDHAT', 'VIEM', 'WAGMI']
-  },
-  {
-    title: "NEXTMATCH",
-    description: "A smart sports scheduling and prediction platform that provides users with upcoming match details, team statistics, and AI-driven predictions. It helps fans and analysts stay updated with match schedules and insights.",
-    link: "https://nextmatch-khaki.vercel.app/",
-    roles: [
-      'FULLSTACK'
-    ],
-    image: 'nextmatch.jpg',
-    techstack: ['NEXTJS', 'PRISMA', 'POSTGRESSQL', 'RABBITMQ', 'REDUX TOOLKIT']
-  },
-]
+    techstack: [
+      'NEXTJS',
+      'FIREBASE',
+      'SUPABASE',
+      'PINECONE',
+      'REDUX TOOLKIT',
+      'ML EMBEDDINGS'
+    ]
+  }
+];
 
 const freelance_projects = [
   {
@@ -137,7 +198,7 @@ export default function Home() {
               <div className="-translate-y-6">
                 <div className="text-sm font-medium">{`[0${index + 1}]`}</div>
                 <div className="h-full w-full relative min-h-64">
-                  <Image alt={project.title} src={`/projects/${project.image}`} fill className="md:object-contain object-cover" />
+                  <Image alt={project.title} src={`${project.image.startsWith('http') ? project.image : `/projects/${project.image}`}`} fill className="md:object-contain object-cover" />
                 </div>
               </div>
               <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
