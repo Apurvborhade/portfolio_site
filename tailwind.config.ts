@@ -11,6 +11,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        os: {
+          text: "var(--os-text)",
+          muted: "var(--os-muted)",
+          win: "var(--os-win)",
+          side: "var(--os-side)",
+          raised: "var(--os-raised)",
+          line: "var(--os-line)",
+          hover: "var(--os-hover)",
+          accent: "var(--os-accent)",
+          "accent-soft": "var(--os-accent-soft)",
+        },
         white: "#ffffff",
         black: "#000000",
         gray: {
@@ -69,7 +80,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        // SF Mono on Macs, like the real Terminal; Geist Mono elsewhere
+        mono: ["ui-monospace", "SFMono-Regular", "SF Mono", "Menlo", "var(--font-mono)", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",
